@@ -1,0 +1,96 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/**********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+/*this is the code for the headline*/
+h1 {
+    width: fit-content;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    border-color: darkred;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h3 {
+  width: fit-content;
+  margin-top: 4px;
+   margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+/* this is the code for my background color*/
+body{
+    background-color: whitesmoke;
+
+    }
+
+
+
+/*this is the code for my image*/
+figure {
+    max-width: 700px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+img{
+    max-width: 100%;
+    display: block;
+
+}
+
+/* this code is to make the spacing look better for my byline*/
+h6{
+  padding: 0;
+    margin: 20px auto 0;
+    max-width: 700px; 
+    line-height: 0px;     /* reduces spacing between lines */
+}
+
+  p {
+    font-size: 16px;     /* standard readable size */
+    line-height: 1.6;    /* gives enough vertical space between lines */
+}
+
+
+.paragraph {
+    padding: 20px;       /* space inside the container */
+    margin: 20px auto;   /* centers the container and adds space outside */
+    max-width: 700px; 
+}
+
+.chart-container {
+    max-width: 700px;   /* limits width */
+    margin: 20px auto;  /* centers container */
+}
+
+.chart-container iframe {
+    width: 100%;        /* fills container */
+    display: block;
+}
